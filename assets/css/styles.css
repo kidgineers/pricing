@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #2f9fa6;
+  --first-color: #5499a8;
   --first-color-alt: #83f0ec;
   --title-color: #364f6b;
   --text-color: #608cbe;
@@ -324,6 +324,13 @@ img{
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
+
+.services__price{
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
 
 .services__description{
   padding: 0 1.5rem;
