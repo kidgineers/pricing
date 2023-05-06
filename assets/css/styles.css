@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #5499a8;
+  --first-color: #2f9fa6;
   --first-color-alt: #83f0ec;
   --title-color: #364f6b;
   --text-color: #608cbe;
@@ -43,9 +43,9 @@
 
 @media screen and (min-width: 768px){
   :root{
-    --biggest-font-size: 5rem;
+    --biggest-font-size: 4rem;
     --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
+    --h2-font-size: 1.75rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
@@ -325,13 +325,6 @@ img{
   margin-bottom: var(--mb-1);
 }
 
-.services__price{
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-  margin-bottom: var(--mb-1);
-}
-
-
 .services__description{
   padding: 0 1.5rem;
 }
@@ -382,7 +375,7 @@ img{
   right: 0;
   display: flex;
   padding: .625rem .813rem;
-  border-radius: .5rem 0 .5rem 0;
+  border-radius: 1rem 0 2rem 0;
 }
 
 /*========== APP ==========*/
@@ -566,6 +559,6 @@ img{
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
     .home__container {
-        height: 700px;
+        height: 600px;
     }
 }
