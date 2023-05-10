@@ -9,7 +9,7 @@
   --first-color: #2f9fa6;
   --first-color-alt: #83f0ec;
   --title-color: #364f6b;
-  --text-color: #608cbe;
+  --text-color: #337789;
   --text-color-light: #6693c6;
   --body-color: #FBFEFD;
   --container-color: #FFFFFF;
@@ -340,6 +340,7 @@ img{
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content:space-between;
   background-color: var(--container-color);
   border-radius: 2rem;
   box-shadow: 0 2px 4px var(--first-color-alt);
