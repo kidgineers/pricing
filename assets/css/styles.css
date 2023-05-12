@@ -122,6 +122,16 @@ img{
   margin-bottom: var(--mb-3);
 }
 
+.section-price{
+  text-align: center;
+}
+
+.section-price{
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
 .section-subtitle{
   display: block;
   color: var(--first-color);
@@ -327,6 +337,10 @@ img{
 
 .services__description{
   padding: 0 1.5rem;
+}
+
+.services__price{
+  font-size: 6;
 }
 
 /*========== MENU ==========*/
