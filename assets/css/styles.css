@@ -13,6 +13,10 @@
   --text-color-light: #051923;
   --body-color: #fffafa;
   --container-color: #FFFFFF;
+  --coursecolor1: #fb5607;
+  --coursecolor2: #ff006e;
+  --coursecolor3: #8338ec;
+
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -122,16 +126,6 @@ img{
   margin-bottom: var(--mb-3);
 }
 
-.section-price{
-  text-align: center;
-}
-
-.section-price{
-  font-size: var(--h2-font-size);
-  color: var(--title-color);
-  margin-bottom: var(--mb-1);
-}
-
 .section-subtitle{
   display: block;
   color: var(--first-color);
@@ -143,6 +137,12 @@ img{
 .bd-container{
   max-width: 900px;
   width: calc(100% - 3rem);
+  margin: auto;
+}
+
+.bd-container-courses{
+  max-width: 900px;
+  width: calc(100% - 1rem);
   margin: auto;
 }
 
@@ -339,17 +339,76 @@ img{
   padding: 0 1.5rem;
 }
 
-.services__price{
-  font-size: 6;
-}
-
 /*========== MENU ==========*/
 .menu__container{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
 
+.courses-container{
+  display: grid;
+  grid-auto-flow: column;
+  
+}
+.courses-scroller{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  border-radius: var(--mb-2);
+  gap: var(--mb-3);
+  text-align: center;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 5px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+}
+
+.courses-scroller::-webkit-scrollbar{
+  border-radius: 1px;
+  scrollbar-width: thin;
+  height: 10px;
+}
+
+.courses-scroller::-webkit-scrollbar-track,.body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  
+}
+ 
+.courses-scroller::-webkit-scrollbar-thumb,.body::-webkit-scrollbar-thumb {
+  background-color: var(--first-color-alt);
+  border-radius: 6rem;
+  
+}
+
+.courses-element{
+  display:grid;
+  grid-template-rows: min-content;
+  gap: var(--mb-2);
+  padding: var(--mb-1);
+  background: var(--first-color-alt);
+  border-radius: var(--mb-3);
+  width: max-content;
+}
+.courses-img{
+  border-radius:var(--mb-3);
+  width: max-content;
+}
+
+
 .menu__content{
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  background-color: var(--container-color);
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px var(--first-color-alt);
+  padding: 1rem;
+}
+.menu__content__courses{
   position: relative;
   text-align: center;
   display: flex;
@@ -557,6 +616,10 @@ img{
 
 @media screen and (min-width: 960px){
   .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bd-container-courses{
     margin-left: auto;
     margin-right: auto;
   }
